@@ -8,10 +8,52 @@ body {
 }
 
 h1 {
-  font-style: italic;
+  font-family: verdana, arial, sans-serif; 
 }
 
 button{
   padding: 10px;
   border-radius: 10px;
+}
+
+#gameButtonArea > button {
+  width:200px;
+  height:200px;
+  margin:2px;
+}
+
+.hidden{
+  display: none;
+}
+
+#greenGameButton {
+    background: lightgreen;
+}
+
+#greenGameButton:active {
+    background:green;
+}
+
+#blueGameButton{
+  background: lightblue;
+}
+
+#blueGameButton:active{
+  background: blue;  
+}
+
+#redGameButton{
+  background: LightCoral;
+}
+
+#redGameButton:active{
+  background: red;
+}
+
+#yellowGameButton{
+  background: LightYellow;
+}
+
+#yellowGameButton:active{
+  background: yellow;
 }
