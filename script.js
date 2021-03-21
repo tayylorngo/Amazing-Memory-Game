@@ -1,11 +1,11 @@
 //Global Variables
 
 // Game Settings
-let pattern = [2, 2, 4, 3, 2, 1, 2, 4];
+let pattern = [];
 let progress = 0; 
 let gamePlaying = false;
 let guessCounter = 0;
-let numButtons = 8;
+let numButtons = 4;
 
 // Clue Times
 const clueHoldTime = 1000;
@@ -117,6 +117,7 @@ function guess(btn){
   if(pattern[guessCounter] == btn){
     if(guessCounter == progress){
       if(progress == pattern.length - 1){
+        updateScore();
         winGame();
       }else{
         progress++;
@@ -135,7 +136,7 @@ function guess(btn){
 
 function generateRandomPattern(){
     for(let i = 0; i < 8; i++){
-      pattern[i] = Math.floor(Math.random() * (numButtons - 1) + 1);
+      pattern[i] = Math.floor(Math.random() * (numButtons) + 1);
     }
   console.log(pattern);
 }
