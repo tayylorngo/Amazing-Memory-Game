@@ -4,6 +4,9 @@ var progress = 0;
 var gamePlaying = false;
 var tonePlaying = false;
 var volume = 0.5;  //must be between 0.0 and 1.0
+const clueHoldTime = 1000;
+const cluePauseTime = 333; //how long to pause in between clues
+const nextClueWaitTime = 1000; //how long to wait before starting playback of the clue sequence
 
 function startGame(){
   progress = 0;
@@ -54,3 +57,18 @@ g.connect(context.destination)
 g.gain.setValueAtTime(0,context.currentTime)
 o.connect(g)
 o.start(0)
+
+function lightButton(btn){
+  document.getElementById("button"+btn).classList.add("lit")
+}
+function clearButton(btn){
+  document.getElementById("button"+btn).classList.remove("lit")
+}
+function playSingleClue(btn){
+  if(gamePlaying){
+    lightButton(btn);
+    playTone(btn,clueHoldTime);
+    setTimeout(clearButton,clueHoldTime,btn);
+  }
+}
+
