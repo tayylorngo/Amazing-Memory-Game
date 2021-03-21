@@ -5,7 +5,7 @@ var gamePlaying = false;
 var tonePlaying = false;
 var guessCounter = 0;
 var volume = 0.5;  //must be between 0.0 and 1.0
-const clueHoldTime = 1000;
+const clueHoldTime = 500;
 const cluePauseTime = 333; //how long to pause in between clues
 const nextClueWaitTime = 1000; //how long to wait before starting playback of the clue sequence
 
@@ -14,6 +14,8 @@ function startGame(){
   gamePlaying = true;
   document.getElementById("startBtn").classList.add("hidden");
   document.getElementById("stopBtn").classList.remove("hidden");
+  updateScore();
+  generateRandomPattern();
   playClueSequence();
 }
 
@@ -25,12 +27,12 @@ function stopGame(){
 
 function loseGame(){
   stopGame();
-  alert("Game Over. You lost.");
+  alert("Game Over. You lost. Your score is: " + progress);
 }
 
 function winGame(){
   stopGame();
-  alert("Game Over. You won!");
+  alert("Game Over. You won! Your score is: " + progress);
 }
 
 // Sound Synthesis Functions
@@ -106,6 +108,7 @@ function guess(btn){
       }
       else{
         progress++;
+        updateScore();
         playClueSequence();
       }
     }
@@ -119,8 +122,12 @@ function guess(btn){
 }
 
 function generateRandomPattern(){
-    
-  
-  
+    for(let i = 0; i < 8; i++){
+      pattern[i] = Math.floor(Math.random() * (4 - 1) + 1);
+    }
+}
+
+function updateScore(){
+    document.getElementById("score").innerHTML = "Score: " + progress;
 }
 

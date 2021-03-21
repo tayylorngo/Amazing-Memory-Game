@@ -23,6 +23,11 @@
     <button id="startBtn" onclick="startGame()">Start</button>
     <button id="stopBtn" onclick="stopGame()" class="hidden">Stop</button>
     
+    <div id="scoreArea">
+        <h2 id="score">Score: 0</h2>
+    </div>
+
+    
     <div id="gameButtonArea">
         <button id="button1" onclick="guess(1)" onmousedown="startTone(1)" onmouseup="stopTone()"></button>
         <button id="button2" onclick="guess(2)" onmousedown="startTone(2)" onmouseup="stopTone()"></button>
@@ -30,11 +35,6 @@
         <button id="button4" onclick="guess(4)" onmousedown="startTone(4)" onmouseup="stopTone()"></button>
     </div>
     
-    <div id="scoreArea">
-        <h2></h2>
-      
-    </div>
-
     <!-- include the Glitch button to show what the webpage is about and
           to make it easier for folks to view source and remix -->
     <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
