@@ -45,14 +45,14 @@ function winGame(){
 
 // Sound Synthesis Functions
 const freqMap = {
-  1: 261.6,
-  2: 329.6,
-  3: 392,
-  4: 466.2,
-  5: 475,
-  6: 500,
-  7: 525,
-  8: 550
+  1: 240,
+  2: 280,
+  3: 320,
+  4: 360,
+  5: 400,
+  6: 440,
+  7: 480,
+  8: 520
 }
 
 function playTone(btn,len){ 
@@ -117,6 +117,7 @@ function guess(btn){
   if(pattern[guessCounter] == btn){
     if(guessCounter == progress){
       if(progress == pattern.length - 1){
+        progress++;
         updateScore();
         winGame();
       }else{
@@ -146,6 +147,9 @@ function updateScore(){
 }
 
 function addButton(){
+    if(gamePlaying){
+      return;
+    }
     if(numButtons === 8){
       alert("Maximum number of buttons reached.")
       return;
@@ -155,6 +159,9 @@ function addButton(){
 }
 
 function removeButton(){
+    if(gamePlaying){
+      return;
+    }
     if(numButtons == 2){
       alert("You cannot have less than two buttons.")
       return;
@@ -162,3 +169,4 @@ function removeButton(){
     document.getElementById("button" + numButtons).classList.add("hidden");
     numButtons -= 1;
 }
+

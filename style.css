@@ -68,30 +68,30 @@ button{
 }
 
 #button5:active, #button5.lit{
-  background: pink;
+  background: Magenta;
 }
 
 #button6{
-  background: lightSeaGreen;
+  background: plum;
 }
 
 #button6:active, #button6.lit{
-  background: SeaGreen;
+  background: purple;
 }
 
 #button7{
-  background: lightCyan;
+  background: orangeRed;
 }
 
 #button7:active, #button7.lit{
-  background: Cyan;
+  background: orange;
 }
 
 #button8{
-  background: LimeGreen;
+  background: crimson;
 }
 
 #button8:active, #button8.lit{
-  background: Lime;
+  background: darkred;
 }
 
