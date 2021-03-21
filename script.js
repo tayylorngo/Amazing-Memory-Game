@@ -5,7 +5,7 @@ let pattern = [2, 2, 4, 3, 2, 1, 2, 4];
 let progress = 0; 
 let gamePlaying = false;
 let guessCounter = 0;
-let numButtons = 4;
+let numButtons = 8;
 
 // Clue Times
 const clueHoldTime = 500;
@@ -138,6 +138,7 @@ function generateRandomPattern(){
     for(let i = 0; i < 8; i++){
       pattern[i] = Math.floor(Math.random() * (numButtons - 1) + 1);
     }
+  console.log(pattern);
 }
 
 function updateScore(){
