@@ -118,22 +118,20 @@ function guess(btn){
     if(guessCounter == progress){
       if(progress == pattern.length - 1){
         winGame();
-      }
-      else{
-        guessCounter++;
+      }else{
         progress++;
-        updateScore();
         playClueSequence();
+        updateScore();
       }
-    }
-    else{
+    }else{
       guessCounter++;
     }
-  }
-  else{
+  }else{
+    console.log(btn);
+    console.log(pattern[guessCounter]);
     loseGame();
   }
-}
+} 
 
 function generateRandomPattern(){
     for(let i = 0; i < 8; i++){
@@ -147,11 +145,19 @@ function updateScore(){
 }
 
 function addButton(){
+    if(numButtons === 8){
+      alert("Maximum number of buttons reached.")
+      return;
+    }
     numButtons += 1;
     document.getElementById("button" + numButtons).classList.remove("hidden");
 }
 
 function removeButton(){
+    if(numButtons == 2){
+      alert("You cannot have less than two buttons.")
+      return;
+    }
     document.getElementById("button" + numButtons).classList.add("hidden");
     numButtons -= 1;
 }
