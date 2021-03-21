@@ -1,13 +1,21 @@
 //Global Variables
-var pattern = [2, 2, 4, 3, 2, 1, 2, 4];
-var progress = 0; 
-var gamePlaying = false;
-var tonePlaying = false;
-var guessCounter = 0;
-var volume = 0.5;  //must be between 0.0 and 1.0
+
+// Game Settings
+let pattern = [2, 2, 4, 3, 2, 1, 2, 4];
+let progress = 0; 
+let gamePlaying = false;
+let guessCounter = 0;
+let numButtons = 4;
+
+// Clue Times
 const clueHoldTime = 500;
-const cluePauseTime = 333; //how long to pause in between clues
+const cluePauseTime = 333;     //how long to pause in between clues
 const nextClueWaitTime = 1000; //how long to wait before starting playback of the clue sequence
+
+// Sound Settings
+let tonePlaying = false;
+let volume = 0.5;              //must be between 0.0 and 1.0
+
 
 function startGame(){
   progress = 0;
@@ -40,8 +48,13 @@ const freqMap = {
   1: 261.6,
   2: 329.6,
   3: 392,
-  4: 466.2
+  4: 466.2,
+  5: 475,
+  6: 500,
+  7: 525,
+  8: 550
 }
+
 function playTone(btn,len){ 
   o.frequency.value = freqMap[btn]
   g.gain.setTargetAtTime(volume,context.currentTime + 0.05,0.025)
@@ -123,7 +136,7 @@ function guess(btn){
 
 function generateRandomPattern(){
     for(let i = 0; i < 8; i++){
-      pattern[i] = Math.floor(Math.random() * (4 - 1) + 1);
+      pattern[i] = Math.floor(Math.random() * (numButtons - 1) + 1);
     }
 }
 
@@ -131,3 +144,6 @@ function updateScore(){
     document.getElementById("score").innerHTML = "Score: " + progress;
 }
 
+function updateNumButtons(newNumButtons){
+    numButtons = newNumButtons;
+}
