@@ -8,7 +8,7 @@ let guessCounter = 0;
 let numButtons = 8;
 
 // Clue Times
-const clueHoldTime = 500;
+const clueHoldTime = 1000;
 const cluePauseTime = 333;     //how long to pause in between clues
 const nextClueWaitTime = 1000; //how long to wait before starting playback of the clue sequence
 
@@ -120,6 +120,7 @@ function guess(btn){
         winGame();
       }
       else{
+        guessCounter++;
         progress++;
         updateScore();
         playClueSequence();
@@ -145,6 +146,10 @@ function updateScore(){
     document.getElementById("score").innerHTML = "Score: " + progress;
 }
 
-function updateNumButtons(newNumButtons){
-    numButtons = newNumButtons;
+function addButton(){
+    numButtons += 1;
+}
+
+function removeButton(){
+    numButtons -= 1;
 }
