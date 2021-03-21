@@ -148,8 +148,10 @@ function updateScore(){
 
 function addButton(){
     numButtons += 1;
+    document.getElementById("button" + numButtons).classList.remove("hidden");
 }
 
 function removeButton(){
+    document.getElementById("button" + numButtons).classList.add("hidden");
     numButtons -= 1;
 }
