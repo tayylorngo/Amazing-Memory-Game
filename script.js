@@ -3,6 +3,7 @@ var pattern = [2, 2, 4, 3, 2, 1, 2, 4];
 var progress = 0; 
 var gamePlaying = false;
 var tonePlaying = false;
+var guessCounter = 0;
 var volume = 0.5;  //must be between 0.0 and 1.0
 const clueHoldTime = 1000;
 const cluePauseTime = 333; //how long to pause in between clues
@@ -13,12 +14,23 @@ function startGame(){
   gamePlaying = true;
   document.getElementById("startBtn").classList.add("hidden");
   document.getElementById("stopBtn").classList.remove("hidden");
+  playClueSequence();
 }
 
 function stopGame(){
   gamePlaying = false;
   document.getElementById("stopBtn").classList.add("hidden");
   document.getElementById("startBtn").classList.remove("hidden");
+}
+
+function loseGame(){
+  stopGame();
+  alert("Game Over. You lost.");
+}
+
+function winGame(){
+  stopGame();
+  alert("Game Over. You won!");
 }
 
 // Sound Synthesis Functions
@@ -73,6 +85,7 @@ function playSingleClue(btn){
 }
 
 function playClueSequence(){
+  guessCounter = 0;
   let delay = nextClueWaitTime; //set delay to initial wait time
   for(let i=0;i<=progress;i++){ // for each clue that is revealed so far
     console.log("play single clue: " + pattern[i] + " in " + delay + "ms")
