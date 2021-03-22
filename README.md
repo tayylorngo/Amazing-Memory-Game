@@ -46,14 +46,22 @@ The following **additional** features are implemented:
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
-![](your-link-here)
+![](http://g.recordit.co/JLG2wMbYx9.gif)
 
 
 ## Reflection Questions
 1. If you used any outside resources to help complete your submission (websites, books, people, etc) list them here. 
+
   How To Create Range Sliders: https://www.w3schools.com/howto/howto_js_rangeslider.asp
+  
+  CSS Colors: https://www.w3schools.com/cssref/css_colors.asp
 
 2. What was a challenge you encountered in creating this submission (be specific)? How did you overcome it? (recommended 200 - 400 words) 
+
+  One challenge that I encountered while creating this submission was the styling and choosing the overall theme of the project. To add more
+  color buttons to the game I had to add colors that had a contrast when clicking on it. I also wanted to position my game control buttons in a
+  way that was organized and easy to see. It was difficult just to pick colors from the top of my head because some colors don't have a contrast
+  to it and it wasn't as simple as selecting a color and the "lighter version" of it. To help me overcome this, I used W
   
   
 
@@ -68,7 +76,6 @@ go back and see their scores. I would also want to difficulty levels where playe
 the playback speed of the sounds accordingly. To take this up a notch, if I had adequate time, I would look into storing players' scores onto
 an online database where players can see other people's scores and compete against each other. I think this would give the game a really
 unique and enjoyable "multiplayer" feel. 
-
 
 
 ## License
