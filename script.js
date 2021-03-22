@@ -109,7 +109,7 @@ function playClueSequence(){
     delay += clueHoldTime 
     delay += cluePauseTime;
     if(hardmode){
-      clueHoldTime *= 0.9;
+      clueHoldTime *= 0.95;
     }
   }
 }
