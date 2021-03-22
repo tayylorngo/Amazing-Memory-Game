@@ -58,18 +58,22 @@ Here's a walkthrough of implemented user stories:
   
 
 3. What questions about web development do you have after completing your submission? (recommended 100 - 300 words) 
-[YOUR ANSWER HERE]
+  
 
 4. If you had a few more hours to work on this project, what would you spend them doing (for example: refactoring certain functions, adding additional features, etc). Be specific. (recommended 100 - 300 words) 
-If I had more time to work on this project, I would want to store players' scores in their own leaderboard so they can go back and play
+
+  If I had more time to work on this project, I would want to store players' scores in their own leaderboard so they can go back and play
 again and again to improve their scores. I would want to use local storage to store the players' scores in their own browser so they can
-go back and see their scores. 
+go back and see their scores. I would also want to difficulty levels where players can select between different levels which would impact
+the playback speed of the sounds accordingly. To take this up a notch, if I had adequate time, I would look into storing players' scores onto
+an online database where players can see other people's scores and compete against each other. I think this would give the game a really
+unique and enjoyable "multiplayer" feel. 
 
 
 
 ## License
 
-    Copyright [YOUR NAME]
+    Copyright [Taylor Ngo]
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
