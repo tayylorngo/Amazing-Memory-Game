@@ -230,11 +230,18 @@ function updateColorText(){
   if(colorText){
       document.getElementById("colorTextBtn").innerHTML = "Disable Color Text";
       document.getElementById("colorTextBtn").style.backgroundColor = "red";
+      let colorButtons = document.getElementsByClassName("colorName");
+      for(let i = 0; i < colorButtons.length; i++){
+        colorButtons[i].style.display = "block";
+      }
   }
   else{
       document.getElementById("colorTextBtn").innerHTML = "Enable Color Text";
       document.getElementById("colorTextBtn").style.backgroundColor = "";
-    
+      let colorButtons = document.getElementsByClassName("colorName");
+      for(let i = 0; i < colorButtons.length; i++){
+        colorButtons[i].style.display = "none";
+      }
   }
   
 }

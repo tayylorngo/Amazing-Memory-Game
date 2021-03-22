@@ -40,7 +40,8 @@ The following **additional** features are implemented:
 - [X] Player can enable mistakes, so the player can lose after 3 strikes.
 - [X] Player can see the number of attempts they have remaining. 
 - [X] Player can enable hard mode which increases playback speed 10% each turn.
-- [X] Player can adjust the pattern length from 1 to 20. 
+- [X] Player can adjust the pattern length from 1 to 20 using the slider.
+- [X] Player can enable color text on the game buttons. 
 
 ## Video Walkthrough
 
@@ -54,12 +55,15 @@ Here's a walkthrough of implemented user stories:
 
 2. What was a challenge you encountered in creating this submission (be specific)? How did you overcome it? (recommended 200 - 400 words) 
   
+  
 
 3. What questions about web development do you have after completing your submission? (recommended 100 - 300 words) 
 [YOUR ANSWER HERE]
 
 4. If you had a few more hours to work on this project, what would you spend them doing (for example: refactoring certain functions, adding additional features, etc). Be specific. (recommended 100 - 300 words) 
-[YOUR ANSWER HERE]
+If I had more time to work on this project, I would want to store players' scores in their own leaderboard so they can go back and play
+again and again to improve their scores. I would want to use local storage to store the players' scores in their own browser so they can
+go back and see their scores. 
 
 
 
