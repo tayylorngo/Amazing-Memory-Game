@@ -7,6 +7,8 @@ let gamePlaying = false;
 let guessCounter = 0;
 let numButtons = 4;
 let hardmode = false;
+let timemode = false;
+let timePerRound = 5000;
 
 // Clue Times
 let clueHoldTime = 1000;
@@ -111,6 +113,9 @@ function playClueSequence(){
     if(hardmode){
       clueHoldTime *= 0.95;
     }
+    if(timemode){
+      setInterval(loseGame, timePerRound);
+    }
   }
 }
 
@@ -182,5 +187,15 @@ function updateHardmode(){
     else{
         document.getElementById("hardmode").innerHTML = "Enable Hard Mode";
     }
+}
+
+function updateTimemode(){
+   timemode = !timemode;
+   if(timemode){
+     document.getElementById("timedmode").innerHTML = "Disable Timed Mode";
+   }
+   else{
+     document.getElementById("timedmode").innerHTML = "Enable Timed Mode";
+   }
 }
 

@@ -28,6 +28,7 @@
           <button id="addButton" onclick="addButton()">Add Button</button>
           <button id="removeButton" onclick="removeButton()">Remove Button</button>
           <button id="hardmode" onclick="updateHardmode()">Enable Hard Mode</button>
+          <button id="timedmode" onclick="updateTimemode()">Enable Timed Mode</button>
     </div>
     
     <div id="scoreArea">
@@ -45,8 +46,9 @@
         <button id="button7" class="hidden" onclick="guess(7)" onmousedown="startTone(7)" onmouseup="stopTone()"><h2 class="colorName">Orange</h2></button>
         <button id="button8" class="hidden" onclick="guess(8)" onmousedown="startTone(8)" onmouseup="stopTone()"><h2 class="colorName">Crimson</h2></button>
     </div>
-  
-    
+
+    <h1>Time to make guess: </h1>
+
     <!-- include the Glitch button to show what the webpage is about and
           to make it easier for folks to view source and remix -->
     <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
