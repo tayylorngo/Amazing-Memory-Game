@@ -52,20 +52,28 @@ Here's a walkthrough of implemented user stories:
 ## Reflection Questions
 1. If you used any outside resources to help complete your submission (websites, books, people, etc) list them here. 
 
-  How To Create Range Sliders: https://www.w3schools.com/howto/howto_js_rangeslider.asp
+  **How To Create Range Sliders:** https://www.w3schools.com/howto/howto_js_rangeslider.asp
   
-  CSS Colors: https://www.w3schools.com/cssref/css_colors.asp
+  **CSS Colors:** https://www.w3schools.com/cssref/css_colors.asp
+  
+  **CSS Buttons:** https://www.w3schools.com/css/css3_buttons.asp
 
 2. What was a challenge you encountered in creating this submission (be specific)? How did you overcome it? (recommended 200 - 400 words) 
 
   One challenge that I encountered while creating this submission was the styling and choosing the overall theme of the project. To add more
   color buttons to the game I had to add colors that had a contrast when clicking on it. I also wanted to position my game control buttons in a
   way that was organized and easy to see. It was difficult just to pick colors from the top of my head because some colors don't have a contrast
-  to it and it wasn't as simple as selecting a color and the "lighter version" of it. To help me overcome this, I used W
-  
-  
+  to them and it wasn't as simple as selecting a color and the "lighter version" of it. To help me overcome this, I used W3Schools' CSS Colors
+  page and looking through all the colors to find ones that fit best. From there, I chose colors that I didn't have and their respective 
+  contrasts. As for the button styling, I decided on separating the add and remove buttons and the game features. I used W3Schools' CSS Buttons
+  page to help me group the buttons together neatly. I also decided on adding hovering effects to make it easier for the player to see and
+  changing the button from green to red when enabling the feature. Overall, I think that styling was a challenge for myself because of the many
+  ways one could've styled the page. With the help of some online resources, I believe I was able to improve my styling and make to what I believe
+  are strong stylistic choices.  
 
 3. What questions about web development do you have after completing your submission? (recommended 100 - 300 words) 
+
+  One question that I have about web development after completing my submission is how would one organize code o
   
 
 4. If you had a few more hours to work on this project, what would you spend them doing (for example: refactoring certain functions, adding additional features, etc). Be specific. (recommended 100 - 300 words) 
