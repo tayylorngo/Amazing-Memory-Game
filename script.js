@@ -7,9 +7,8 @@ let gamePlaying = false;
 let guessCounter = 0;
 let numButtons = 4;
 let hardmode = false;
-let timemode = false;
-let timePerRound = 5000;
-let guessed = false;
+let mistakeMode = false;
+let strikes = 0;
 
 // Clue Times
 let clueHoldTime = 1000;
@@ -114,23 +113,8 @@ function playClueSequence(){
     if(hardmode){
       clueHoldTime *= 0.95;
     }
-    if(timemode){
-      timer();
-    }
   }
 }
-
-function timer(){
-    let timed = setInterval(
-      function(){
-          
-        
-      }, 1000);
-  if(guessed){
-    clearInterval(timed);
-  }
-}
-
 
 function guess(btn){
   if(!gamePlaying){
@@ -200,13 +184,15 @@ function updateHardmode(){
     }
 }
 
-function updateTimemode(){
-   timemode = !timemode;
-   if(timemode){
-     document.getElementById("timedmode").innerHTML = "Disable Timed Mode";
+function updateMistakemode(){
+   mistakeMode = !mistakeMode;
+   if(mistakeMode){
+     document.getElementById("strikesMode").innerHTML = "Disable Mistakes";
+     document.getElementById("numTries").innerHTML = "Remaining Tries: 3";
    }
    else{
-     document.getElementById("timedmode").innerHTML = "Enable Timed Mode";
+     document.getElementById("strikesMode").innerHTML = "Enable Mistakes";
+     document.getElementById("numTries").innerHTML = "Remaining Tries: 1";
    }
 }
 
