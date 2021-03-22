@@ -23,7 +23,7 @@ The following **required** functionality is complete:
 The following **optional** features are implemented:
 
 * [X] Any HTML page elements (including game buttons) has been styled differently than in the tutorial
-* [] Buttons use a pitch (frequency) other than the ones in the tutorial
+* [ ] Buttons use a pitch (frequency) other than the ones in the tutorial
 * [X] More than 4 functional game buttons
 * [X] Playback speeds up on each turn
 * [X] Computer picks a different pattern each time the game is played
@@ -73,7 +73,13 @@ Here's a walkthrough of implemented user stories:
 
 3. What questions about web development do you have after completing your submission? (recommended 100 - 300 words) 
 
-  One question that I have about web development after completing my submission is how would one organize code o
+  One question that I have about web development after completing my submission is how would one organize and work with code of various technologies
+  while working in a team. I would imagine that a large scale web application or even a browser game would use various different types of 
+  technologies and be built my multiple people. I am curious to how they manage their large project amongst many people because not everyone may be
+  familiar with all the technologies. For instance, in this project I was not familiar with the way the sounds were implemented, but the code was
+  already there for myself to use. Would different people write documentation on their code pieces? Or would everyone on the team just learn 
+  the technology thoroughly to avoid confusion. I think that there are multiple ways to approach this, but I want to know what the most 
+  efficient and commonly used practice would be. 
   
 
 4. If you had a few more hours to work on this project, what would you spend them doing (for example: refactoring certain functions, adding additional features, etc). Be specific. (recommended 100 - 300 words) 
