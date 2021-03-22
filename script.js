@@ -115,18 +115,21 @@ function playClueSequence(){
       clueHoldTime *= 0.95;
     }
     if(timemode){
-      let timer = setInterval(function(){
-        if(guessed){
-          clearInterval(timer);
-        }
-        else{
-          document.getElementById
-        }
-      }, timePerRound);
+      timer();
     }
   }
 }
 
+function timer(){
+    let timed = setInterval(
+      function(){
+          
+        
+      }, 1000);
+  if(guessed){
+    clearInterval(timed);
+  }
+}
 
 
 function guess(btn){
@@ -150,7 +153,6 @@ function guess(btn){
   }else{
     loseGame();
   }
-  stopTimer();
 } 
 
 function generateRandomPattern(){
