@@ -8,7 +8,7 @@ let guessCounter = 0;
 let numButtons = 4;
 
 // Clue Times
-const clueHoldTime = 1000;
+let clueHoldTime = 1000;
 const cluePauseTime = 333;     //how long to pause in between clues
 const nextClueWaitTime = 1000; //how long to wait before starting playback of the clue sequence
 
