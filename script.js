@@ -9,6 +9,7 @@ let numButtons = 4;
 let hardmode = false;
 let timemode = false;
 let timePerRound = 5000;
+let guessed = false;
 
 // Clue Times
 let clueHoldTime = 1000;
@@ -114,10 +115,19 @@ function playClueSequence(){
       clueHoldTime *= 0.95;
     }
     if(timemode){
-      setInterval(loseGame, timePerRound);
+      let timer = setInterval(function(){
+        if(guessed){
+          clearInterval(timer);
+        }
+        else{
+          document.getElementById
+        }
+      }, timePerRound);
     }
   }
 }
+
+
 
 function guess(btn){
   if(!gamePlaying){
@@ -138,10 +148,9 @@ function guess(btn){
       guessCounter++;
     }
   }else{
-    console.log(btn);
-    console.log(pattern[guessCounter]);
     loseGame();
   }
+  stopTimer();
 } 
 
 function generateRandomPattern(){
