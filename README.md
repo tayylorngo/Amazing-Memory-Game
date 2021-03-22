@@ -40,6 +40,7 @@ The following **additional** features are implemented:
 - [X] Player can enable mistakes, so the player can lose after 3 strikes.
 - [X] Player can see the number of attempts they have remaining. 
 - [X] Player can enable hard mode which increases playback speed 10% each turn.
+- [X] Player can adjust the pattern length from 1 to 20. 
 
 ## Video Walkthrough
 
@@ -49,10 +50,10 @@ Here's a walkthrough of implemented user stories:
 
 ## Reflection Questions
 1. If you used any outside resources to help complete your submission (websites, books, people, etc) list them here. 
-[YOUR ANSWER HERE]
+  How To Create Range Sliders: https://www.w3schools.com/howto/howto_js_rangeslider.asp
 
 2. What was a challenge you encountered in creating this submission (be specific)? How did you overcome it? (recommended 200 - 400 words) 
-[YOUR ANSWER HERE]
+  
 
 3. What questions about web development do you have after completing your submission? (recommended 100 - 300 words) 
 [YOUR ANSWER HERE]

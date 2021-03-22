@@ -25,23 +25,25 @@
     
     <div id="gameControls">
       <h2>Game Controls</h2>
-      
-      <div class="patternContainer">
-        <input type="range" min="1" max="20" value="8" id="patternRange">
-        <h4>
-          Pattern Length: 8
-        </h4>
-      </div>
     
       <div id="controlBtnGroup">
           <button class="controlBtn" id="addButton" onclick="addButton()">Add Button</button>
           <button class="controlBtn" id="removeButton" onclick="removeButton()">Remove Button</button>
           <button class="controlBtn" id="hardmode" onclick="updateHardmode()">Enable Hard Mode</button>
           <button class="controlBtn" id="strikesMode" onclick="updateMistakemode()">Enable Mistakes</button>
+          <button class="controlBtn" id="colorTextBtn" onclick="updateColorText()">Enable Color Text</button>
       </div>
-      
+      <br>
+      <br>
+      <br>
+      <br>
+      <div class="patternContainer">
+        <input type="range" min="1" max="20" value="8" id="patternRange">
+        <h4 id="patternLengthValue">
+          Pattern Length: 8
+        </h4>
+      </div>
     </div>
-    <br>
     <div id="scoreArea">
         <h1 id="score">Score: 0</h1>
     </div>

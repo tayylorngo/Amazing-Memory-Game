@@ -9,6 +9,8 @@ let numButtons = 4;
 let hardmode = false;
 let mistakeMode = false;
 let strikes = 0;
+let patternLength = 8;
+let colorText = false;
 
 // Clue Times
 let clueHoldTime = 1000;
@@ -154,7 +156,7 @@ function guess(btn){
 } 
 
 function generateRandomPattern(){
-    for(let i = 0; i < 8; i++){
+    for(let i = 0; i < patternLength; i++){
       pattern[i] = Math.floor(Math.random() * (numButtons) + 1);
     }
   console.log(pattern);
@@ -195,9 +197,11 @@ function updateHardmode(){
     hardmode = !hardmode;
     if(hardmode){
         document.getElementById("hardmode").innerHTML = "Disable Hard Mode";
+        document.getElementById("hardmode").style.backgroundColor = "red";
     }
     else{
         document.getElementById("hardmode").innerHTML = "Enable Hard Mode";
+        document.getElementById("hardmode").style.backgroundColor = "";
     }
 }
 
@@ -208,13 +212,38 @@ function updateMistakemode(){
    mistakeMode = !mistakeMode;
    if(mistakeMode){
      document.getElementById("strikesMode").innerHTML = "Disable Mistakes";
+    document.getElementById("strikesMode").style.backgroundColor = "red";
      document.getElementById("numTries").innerHTML = "Remaining Tries: 3";
    }
    else{
      document.getElementById("strikesMode").innerHTML = "Enable Mistakes";
+     document.getElementById("strikesMode").style.backgroundColor = "";
      document.getElementById("numTries").innerHTML = "Remaining Tries: 1";
    }
 }
 
-let pattern 
+function updateColorText(){
+  if(gamePlaying){
+    return;
+  }
+  colorText = !colorText;
+  if(colorText){
+      document.getElementById("colorTextBtn").innerHTML = "Disable Color Text";
+      document.getElementById("colorTextBtn").style.backgroundColor = "red";
+  }
+  else{
+      document.getElementById("colorTextBtn").innerHTML = "Enable Color Text";
+      document.getElementById("colorTextBtn").style.backgroundColor = "";
+    
+  }
+  
+}
 
+let patternSlider = document.getElementById("patternRange");
+patternSlider.oninput = function(){
+    if(gamePlaying){
+      return;
+    }  
+    patternLength = patternSlider.value;
+    document.getElementById("patternLengthValue").innerHTML = "Pattern Length: " + patternLength;
+}
