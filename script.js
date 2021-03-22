@@ -6,6 +6,7 @@ let progress = 0;
 let gamePlaying = false;
 let guessCounter = 0;
 let numButtons = 4;
+let hardmode = false;
 
 // Clue Times
 let clueHoldTime = 1000;
@@ -168,5 +169,10 @@ function removeButton(){
     }
     document.getElementById("button" + numButtons).classList.add("hidden");
     numButtons -= 1;
+}
+
+function updateHardmode(){
+  
+    hardmode = !hardmode;
 }
 
