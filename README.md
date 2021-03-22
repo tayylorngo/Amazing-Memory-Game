@@ -36,7 +36,9 @@ The following **additional** features are implemented:
 
 - [X] Player can add up to 8 buttons
 - [X] Player can remove buttons (minimum 2 buttons)
+- [X] Player can see their score as they play
 - [X] Player can enable mistakes, so the player can lose after 3 strikes.
+- [X] Player can see the number of attempts they have remaining. 
 - [X] Player can enable hard mode which increases playback speed 10% each turn.
 
 ## Video Walkthrough

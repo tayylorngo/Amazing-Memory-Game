@@ -189,6 +189,9 @@ function removeButton(){
 }
 
 function updateHardmode(){
+    if(gamePlaying){
+      return;
+    }
     hardmode = !hardmode;
     if(hardmode){
         document.getElementById("hardmode").innerHTML = "Disable Hard Mode";
@@ -199,6 +202,9 @@ function updateHardmode(){
 }
 
 function updateMistakemode(){
+    if(gamePlaying){
+      return;
+    }
    mistakeMode = !mistakeMode;
    if(mistakeMode){
      document.getElementById("strikesMode").innerHTML = "Disable Mistakes";
@@ -209,4 +215,6 @@ function updateMistakemode(){
      document.getElementById("numTries").innerHTML = "Remaining Tries: 1";
    }
 }
+
+let pattern 
 

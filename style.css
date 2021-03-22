@@ -30,7 +30,7 @@ button{
 }
 
 .controlBtn:hover{
-  background-color: lightgreen;
+  background-color: #557846;
   color: white;
 }
 
@@ -113,5 +113,9 @@ button{
 
 #button8:active, #button8.lit{
   background: darkred;
+}
+
+.patternContainer{
+  margin-bottom: 10px;
 }
 
