@@ -20,17 +20,19 @@
       Welcome to the Amazing Light & Sound Color Game! Repeat the patterns by pressing the colored buttons.
     </p>
     
-    <button id="startBtn" onclick="startGame()">Start</button>
-    <button id="stopBtn" onclick="stopGame()" class="hidden">Stop</button>
+    <button class="controlBtn" id="startBtn" onclick="startGame()">Start</button>
+    <button id="stopBtn" onclick="stopGame()" class="hidden controlBtn">Stop</button>
     
     <div id="gameControls">
           <h2>Game Controls</h2>
-          <button id="addButton" onclick="addButton()">Add Button</button>
-          <button id="removeButton" onclick="removeButton()">Remove Button</button>
-          <button id="hardmode" onclick="updateHardmode()">Enable Hard Mode</button>
-          <button id="strikesMode" onclick="updateMistakemode()">Enable Mistakes</button>
+      <div id="controlBtnGroup">
+          <button class="controlBtn" id="addButton" onclick="addButton()">Add Button</button>
+          <button class="controlBtn" id="removeButton" onclick="removeButton()">Remove Button</button>
+          <button class="controlBtn" id="hardmode" onclick="updateHardmode()">Enable Hard Mode</button>
+          <button class="controlBtn" id="strikesMode" onclick="updateMistakemode()">Enable Mistakes</button>
+      </div>
     </div>
-    
+    <br>
     <div id="scoreArea">
         <h1 id="score">Score: 0</h1>
     </div>

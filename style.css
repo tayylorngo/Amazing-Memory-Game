@@ -22,8 +22,28 @@ button{
   margin:2px;
 }
 
-button:hover{
-  border: solid 3px green;
+.controlBtn{
+  background-color: #6b9658;
+  color: white;
+  padding: none;
+  border-radius: 0px;
+}
+
+.controlBtn:hover{
+  background-color: lightgreen;
+  color: white;
+}
+
+#controlBtnGroup button{
+    float: left;
+}
+
+#scoreArea{
+  margin-top: 4%;
+}
+
+#stopBtn{
+  background-color: red;
 }
 
 
