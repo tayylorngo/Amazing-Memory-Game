@@ -135,7 +135,21 @@ function guess(btn){
       guessCounter++;
     }
   }else{
-    loseGame();
+    if(mistakeMode){
+        strikes++;
+        if(strikes === 3){
+            document.getElementById("numTries").innerHTML = "Remaining Tries: " + (3 - strikes);
+            loseGame();
+        }
+        else{
+          alert("Incorrect Sequence. " + (3 - strikes) + " tries remaining.")
+          document.getElementById("numTries").innerHTML = "Remaining Tries: " + (3 - strikes);
+          playClueSequence();
+        }
+    }
+    else{
+      loseGame();
+    }
   }
 } 
 

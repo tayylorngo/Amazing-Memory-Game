@@ -22,19 +22,22 @@ The following **required** functionality is complete:
 
 The following **optional** features are implemented:
 
-* [ ] Any HTML page elements (including game buttons) has been styled differently than in the tutorial
+* [X] Any HTML page elements (including game buttons) has been styled differently than in the tutorial
 * [] Buttons use a pitch (frequency) other than the ones in the tutorial
 * [X] More than 4 functional game buttons
 * [X] Playback speeds up on each turn
 * [X] Computer picks a different pattern each time the game is played
-* [] Player only loses after 3 mistakes (instead of on the first mistake)
+* [X] Player only loses after 3 mistakes (instead of on the first mistake)
 * [ ] Game button appearance change goes beyond color (e.g. add an image)
 * [ ] Game button sound is more complex than a single tone (e.g. an audio file, a chord, a sequence of multiple tones)
 * [ ] User has a limited amount of time to enter their guess on each turn
 
 The following **additional** features are implemented:
 
-- [ ] List anything else that you can get done to improve the app!
+- [X] Player can add up to 8 buttons
+- [X] Player can remove buttons (minimum 2 buttons)
+- [X] Player can enable mistakes, so the player can lose after 3 strikes.
+- [X] Player can enable hard mode which increases playback speed 10% each turn.
 
 ## Video Walkthrough
 

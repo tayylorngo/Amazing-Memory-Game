@@ -22,6 +22,11 @@ button{
   margin:2px;
 }
 
+button:hover{
+  border: solid 3px green;
+}
+
+
 .hidden{
   display: none;
 }
