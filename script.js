@@ -108,6 +108,9 @@ function playClueSequence(){
     setTimeout(playSingleClue,delay,pattern[i]) // set a timeout to play that clue
     delay += clueHoldTime 
     delay += cluePauseTime;
+    if(hardmode){
+      clueHoldTime -= 100;
+    }
   }
 }
 
@@ -172,7 +175,12 @@ function removeButton(){
 }
 
 function updateHardmode(){
-  
     hardmode = !hardmode;
+    if(hardmode){
+        document.getElementById("hardmode").innerHTML = "Disable Hard Mode";
+    }
+    else{
+        document.getElementById("hardmode").innerHTML = "Enable Hard Mode";
+    }
 }
 
