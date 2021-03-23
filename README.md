@@ -7,6 +7,7 @@ Submitted by: **Taylor Ngo**
 Time spent: **5** hours spent in total
 
 Link to project: (https://glitch.com/edit/#!/ablaze-political-fig)
+
 Live site: https://ablaze-political-fig.glitch.me/
 
 ## Required Functionality
